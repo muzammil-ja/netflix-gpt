@@ -16,6 +16,13 @@
 -update profile
 -if the user is not logged in redirect in login page/vice versa
 -add hardcode values into constant file
+-get movie data from watchmode API 
+-created custom hook for now playing movies
+-update store with movies data
+-planning for main container and secondary container
+-fetch data for trailer video
+-embedded the you tube video make it autoplay and mute
+-add tailwind classes
 
 
 
