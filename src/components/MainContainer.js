@@ -5,9 +5,9 @@ import VideoTitle from "./VideoTitle";
 const MainContainer = ()=>{
     const movies=useSelector(store=>store.movies?.nowPlayingMovies)
 
-    if(!movies||movies.releases.length===0) return null;
+    if(!movies||movies.length===0) return null;
 
-    const mainMovie=movies.releases[2];
+    const mainMovie=movies[0];
   
     const originalTitle=mainMovie.title
     const movieId=mainMovie.id;

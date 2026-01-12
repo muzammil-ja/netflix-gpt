@@ -23,6 +23,9 @@
 -fetch data for trailer video
 -embedded the you tube video make it autoplay and mute
 -add tailwind classes
+-build secondary container
+-build movie list
+-build movie card
 
 
 
@@ -30,7 +33,7 @@
 login/signup page 
 -sign in /sigm up form 
 -reidet to browser page 
--Browse page (after loogin )
+-Browse page (after login )
 -header
 -Main movie
 -trailer in background
