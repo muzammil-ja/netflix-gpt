@@ -81,10 +81,10 @@ const Login = ()=>{
     return(
         <div>
             <Header/>
-            <div className="absolute">
-                <img src={Logo} alt="background-img"/>
+            <div className="fixed inset-0 -z-10">
+                <img className="h-screen w-screen object-cover" src={Logo} alt="background-img"/>
             </div>
-            <form onSubmit={(e)=>e.preventDefault()} className="w-3/12 my-36 absolute p-12 bg-black mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+            <form onSubmit={(e)=>e.preventDefault()} className="w-full md:w-3/12 my-36 absolute p-12 bg-black mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
 
             <h1 className="font-bold text-3xl py-4">{isSignIn?"Sign In":"Sign Up"}</h1>
 

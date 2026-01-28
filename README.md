@@ -26,6 +26,10 @@
 -build secondary container
 -build movie list
 -build movie card
+-build GPT feature
+-integrate GPT API
+-Get OPEN-AI key 
+-fetch gptMovieSuggestion from watchmode
 
 
 
