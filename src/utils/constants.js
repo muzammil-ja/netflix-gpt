@@ -2,5 +2,5 @@
 
  export const IMG_CDN_URL = "https://cdn.watchmode.com/posters/"
 
-export const OPENROUTER_API_KEY=process.env.VITE_OPENROUTER_API_KEY;
+export const OPENROUTER_API_KEY=import.meta.env.VITE_OPENROUTER_API_KEY;
  
