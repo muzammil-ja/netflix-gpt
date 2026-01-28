@@ -52,7 +52,7 @@ const showGptSearch= useSelector((store)=>store.gpt.showGptSearch);
   return () => {
     authListener.subscription.unsubscribe();
   };
-},[]);
+},[dispatch,navigate]);
 
 const handleGptSearchClick = ()=>{
 dispatch(toggleGptSearchView());
