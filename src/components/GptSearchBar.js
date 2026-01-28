@@ -1,11 +1,12 @@
 import { useRef } from "react";
-import { OPENROUTER_API_KEY } from "../utils/constants";
 import { addGptMovieResult } from "../utils/gptSlice";
 import { useDispatch } from "react-redux";
 const GptSearchBar = () =>{
 
     const searchText=useRef(null)
  const dispatch=useDispatch();
+ const OPENROUTER_API_KEY = process.env.REACT_APP_OPENROUTER_API_KEY;
+
 
  const searchMovie= async (movie)=>{
   const data =await fetch(
@@ -41,7 +42,7 @@ const GptSearchBar = () =>{
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    model: "openai/gpt-3.5-turbo",
+    model: "openai/gpt-3.5-turbo-0125",
     messages: [
       {
         role: "user",
