@@ -29,7 +29,6 @@ const GptSearchBar = () =>{
 
  }
     const handleGptSearchClick = async()=>{
-      console.log("OPENROUTER KEY:", OPENROUTER_API_KEY);
 
         console.log(searchText.current.value);
 
