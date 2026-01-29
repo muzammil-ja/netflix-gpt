@@ -29,6 +29,8 @@ const GptSearchBar = () =>{
 
  }
     const handleGptSearchClick = async()=>{
+      console.log("OPENROUTER KEY:", OPENROUTER_API_KEY);
+
         console.log(searchText.current.value);
 
         const gptQuery="Act as a movie recommendation system and suggest some movies for thr query :"
@@ -40,20 +42,18 @@ const GptSearchBar = () =>{
   headers: {
     "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
     "Content-Type": "application/json",
+     "HTTP-Referer": window.location.origin,
+      "X-Title": "Netflix GPT App",
   },
   body: JSON.stringify({
-    model: "openai/gpt-3.5-turbo-0125",
-    messages: [
-      {
-        role: "user",
-        content: gptQuery
-      }
-    ]
+    model: "openai/gpt-4o-mini",
+    messages: [{role: "user",content: gptQuery}]
   }),
 });
     
 
     const data = await response.json();
+    console.log(data);
 
 if (!data.choices) {
   console.error("AI Error:", data);
